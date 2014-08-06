@@ -24,7 +24,7 @@ module SupplyDrop
 
     def prepare
       run "mkdir -p #{puppet_destination}"
-      run "#{sudo} chown -R $USER: #{puppet_destination}"
+      run "chown -R $USER: #{puppet_destination}"
     end
 
     def noop
